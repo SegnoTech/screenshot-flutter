@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # screenshot_auto
 
 A new Flutter project.
