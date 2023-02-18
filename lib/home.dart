@@ -5,6 +5,8 @@ import 'package:preference_list/preference_list.dart';
 import 'package:screen_capturer/screen_capturer.dart';
 import 'package:path_provider/path_provider.dart';
 
+import 'keyboardcount.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -127,6 +129,14 @@ class _HomePageState extends State<HomePage> {
         title: const Text('Plugin example app'),
       ),
       body: _buildBody(context),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => KeyboardPressCount()));
+        },
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
+  
